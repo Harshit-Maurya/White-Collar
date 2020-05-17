@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Footer(props) {
     return(
@@ -8,32 +9,30 @@ function Footer(props) {
 				<div class="col-xs-12 col-sm-4 col-md-4">
 					<h5>Quick links</h5>
 					<ul class="list-unstyled quick-links">
-						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Home</a></li>
-						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>About</a></li>
-						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
-						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
-						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+						<li><Link to="/home"><i class="fa fa-angle-double-right"></i>Home</Link></li>
+						<li><Link to="/aboutus"><i class="fa fa-angle-double-right"></i>About Us</Link></li>
+						<li><Link to="/menu"><i class="fa fa-angle-double-right"></i>Menu</Link></li>
+						<li><Link to="/contactus"><i class="fa fa-angle-double-right"></i>Contact Us</Link></li>
+						<li><Link to="/FAQ"><i class="fa fa-angle-double-right"></i>FAQ</Link></li>
 					</ul>
 				</div>
 				<div class="col-xs-12 col-sm-4 col-md-4">
 					<h5>Quick links</h5>
 					<ul class="list-unstyled quick-links">
-						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Home</a></li>
-						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>About</a></li>
-						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
-						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
-						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Videos</a></li>
-					</ul>
+                        <li><Link to="/home"><i class="fa fa-angle-double-right"></i>Home</Link></li>
+						<li><Link to="/aboutus"><i class="fa fa-angle-double-right"></i>About Us</Link></li>
+						<li><Link to="/menu"><i class="fa fa-angle-double-right"></i>Menu</Link></li>
+						<li><Link to="/contactus"><i class="fa fa-angle-double-right"></i>Contact Us</Link></li>
+						<li><Link to="/FAQ"><i class="fa fa-angle-double-right"></i>FAQ</Link></li>					</ul>
 				</div>
 				<div class="col-xs-12 col-sm-4 col-md-4">
 					<h5>Quick links</h5>
-					<ul class="list-unstyled quick-links list-inline">
-						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="list-inline-item"></i>Home</a></li>
-						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="list-inline-item"></i>About</a></li>
-						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="list-inline-item"></i>FAQ</a></li>
-						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="list-inline-item"></i>Get Started</a></li>
-						<li><a href="https://wwwe.sunlimetech.com" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Imprint</a></li>
-					</ul>
+					<ul class="list-unstyled quick-links">
+                        <li><Link to="/home"><i class="fa fa-angle-double-right"></i>Home</Link></li>
+						<li><Link to="/aboutus"><i class="fa fa-angle-double-right"></i>About Us</Link></li>
+						<li><Link to="/menu"><i class="fa fa-angle-double-right"></i>Menu</Link></li>
+						<li><Link to="/contactus"><i class="fa fa-angle-double-right"></i>Contact Us</Link></li>
+						<li><Link to="/FAQ"><i class="fa fa-angle-double-right"></i>FAQ</Link></li>					</ul>
 				</div>
 			</div>
 			    <div class="row">
