@@ -1,38 +1,38 @@
 export const LEADERS = [
     {
       id: 0,
-      name: 'Peter Pan',
-      image: '/assets/images/alberto.png',
+      name: 'Gordan Ramsay',
+      image: '/assets/images/Gordan.png',
       designation: 'Chief Epicurious Officer',
       abbr: 'CEO',
       featured: false,
-      description: "Our CEO, Peter, credits his hardworking East Asian immigrant parents who undertook the arduous journey to the shores of America with the intention of giving their children the best future. His mother's wizardy in the kitchen whipping up the tastiest dishes with whatever is available inexpensively at the supermarket, was his first inspiration to create the fusion cuisines for which The Frying Pan became well known. He brings his zeal for fusion cuisines to this restaurant, pioneering cross-cultural culinary connections."
+      description: "Our CEO, Gordon Ramsay is a legendary character in the culinary world and he is a high profiled English chef. He’s a British chef, one of the most recognized and painstaking on the cooking field. He’s renowned for his intense character, and his unusual skill for food that makes him stand out from the others. With shows on Tv such as Ramsay’s Kitchen Nightmare, Hell’s Kitchen, as well as Masterchef USA, this guy has been successful just like his mentor Marco Pierre White. He cooked his own way and get top into the list."
     },
     {
       id: 1,
-      name: 'Dhanasekaran Witherspoon',
-      image: '/assets/images/alberto.png',
+      name: 'Marco Pierre White',
+      image: '/assets/images/Marco.png',
       designation: 'Chief Food Officer',
       abbr: 'CFO',
-        featured: false,
-      description: 'Our CFO, Danny, as he is affectionately referred to by his colleagues, comes from a long established family tradition in farming and produce. His experiences growing up on a farm in the Australian outback gave him great appreciation for varieties of food sources. As he puts it in his own words, Everything that runs, wins, and everything that stays, pays!'
+      featured: true,
+      description: 'Our CFO, Marco Pierre White, a British star chef, restaurateur as well as a tv figure makes his greatest contribution to modern International cuisine and considered to be the Godfather of contemporary cuisine. He was named as the 1st celebrity chef. White made a picture by being the youngest to get three Michelin stars at the time he was 33. His idea that sharing is how you gain and so he properly trained names like Gordon Ramsay as well as Curtis Stone who praise him for his character.'
     },
     {
       id: 2,
-      name: 'Agumbe Tang',
-      image: '/assets/images/alberto.png',
+      name: 'Sanjeev Kapoor',
+      image: '/assets/images/Sanjeev.png',
       designation: 'Chief Taste Officer',
       abbr: 'CTO',
         featured: false,
-      description: 'Blessed with the most discerning gustatory sense, Agumbe, our CFO, personally ensures that every dish that we serve meets his exacting tastes. Our chefs dread the tongue lashing that ensues if their dish does not meet his exacting standards. He lives by his motto, You click only if you survive my lick.'
+      description: 'Our CTO, Sanjeev Kapoor is an Indian chef as well as a businessman. He’s also a recipe book writer, a restaurant specialist as well as a tv host. Sanjeev is among the most famous Indian chefs, and he has created tv programs such as “Khana Khazana”, which can be regarded as the longest cooking running shows in Asia. He has started a Food Channel in HD in 2011, that was only centered on food. The Singapore Airlines have hired him as part of its International Culinary Panel. Just lately, he became the judge in the cooking competitive show “MasterChef Season 3”.'
     },
     {
       id: 3,
-      name: 'Alberto Somayya',
+      name: 'Alberto',
       image: '/assets/images/alberto.png',
       designation: 'Executive Chef',
       abbr: 'EC',
-      featured: true,
-      description: 'Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. He says, Put together the cuisines from the two craziest cultures, and you get a winning hit! Amma Mia!'
+      featured: false,
+      description: 'Our EC, Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. He says, Put together the cuisines from the two craziest cultures, and you get a winning hit! Amma Mia!'
     }
   ];

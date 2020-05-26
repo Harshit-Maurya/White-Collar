@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Breadcrumb, BreadcrumbItem, Card, CardBody, CardHeader, Media } from 'reactstrap';
 import { Link } from 'react-router-dom';
@@ -5,71 +6,68 @@ import { baseUrl } from '../shared/baseUrl';
 import { Fade, Stagger } from 'react-animation-components';
 import { Loading } from './LoadingComponent';
 
-function RenderLeader({leader,isLoading,errMess}){
-  
+function RenderLeader({ leader, isLoading, errMess }) {
+
     return (
-     
-                 <Media tag="li">
-                  <Media left middle>
-                      <Media object src={baseUrl+leader.image} alt={leader.name} />
-                  </Media>
-                  <Media body className="ml-5">
-                    <Media heading>
-                        <p>{leader.name}</p>
-                      
-                        </Media>
-                    <p>{leader.designation}</p>
-                    <p>{leader.description}</p>
-                  </Media>
+
+        <Media tag="li">
+            <Media left middle>
+                <Media object src={baseUrl + leader.image} alt={leader.name} />
+            </Media>
+            <Media body className="ml-5">
+                <Media heading>
+                    <p>{leader.name}</p>
+
                 </Media>
-       
+                <p>{leader.designation}</p>
+                <p>{leader.description}</p>
+            </Media>
+        </Media>
+
     )
 
 }
 function About(props) {
     var leaders;
     if (props.isLoading) {
-        leaders=(
+        leaders = (
             <div className="container">
-                <div className="row">            
+                <div className="row">
                     <Loading />
                 </div>
             </div>
         );
     }
     else if (props.errMess) {
-        leaders=(
+        leaders = (
             <div className="container">
-                <div className="row">            
+                <div className="row">
                     <h4>{props.errMess}</h4>
                 </div>
             </div>
         );
     }
-    else if (props.leaders != null) 
- 
-   leaders=     (
+    else if (props.leaders != null)
 
-           
-                <Media list>
+        leaders = (
+            <Media list>
                 <Stagger in>
-              
-     {           props.leaders.map((leader) => {
-    return (
-        <Fade in>
-      <RenderLeader leader={leader}></RenderLeader>
-      </Fade>
-      )
-     
-    })
-}
-      </Stagger> 
-                </Media>
-)
-               
-   
+                    {props.leaders.map((leader) => {
+                        return (
+                            <Fade in>
+                                <RenderLeader leader={leader}></RenderLeader>
+                            </Fade>
+                        )
 
-    return(
+                    })
+                    }
+                </Stagger>
+            </Media>
+        )
+
+
+
+    return (
         <div className="container">
             <div className="row">
                 <Breadcrumb>
@@ -79,12 +77,12 @@ function About(props) {
                 <div className="col-12">
                     <h3>About Us</h3>
                     <hr />
-                </div>                
+                </div>
             </div>
             <div className="row row-content">
                 <div className="col-12 col-md-6">
                     <h2>Our History</h2>
-                    <p>Started in 2010, Ristorante con Fusion quickly established itself as a culinary icon par excellence in Hong Kong. With its unique brand of world fusion cuisine that can be found nowhere else, it enjoys patronage from the A-list clientele in Hong Kong.  Featuring four of the best three-star Michelin chefs in the world, you never know what will arrive on your plate the next time you visit us.</p>
+                    <p>Started in 2010, Ristorante White Collar quickly established itself as a culinary icon par excellence in India. With its unique brand of world fusion cuisine that can be found nowhere else, it enjoys patronage from the A-list clientele in Hong Kong.  Featuring four of the best three-star Michelin chefs in the world, you never know what will arrive on your plate the next time you visit us.</p>
                     <p>The restaurant traces its humble beginnings to <em>The Frying Pan</em>, a successful chain started by our CEO, Mr. Peter Pan, that featured for the first time the world's best cuisines in a pan.</p>
                 </div>
                 <div className="col-12 col-md-5">
@@ -104,7 +102,8 @@ function About(props) {
                         </CardBody>
                     </Card>
                 </div>
-                <div className="col-12">
+                <div className="col-11">
+                   <marquee behavior="alternate" >
                     <Card>
                         <CardBody className="bg-faded">
                             <blockquote className="blockquote">
@@ -117,6 +116,7 @@ function About(props) {
                             </blockquote>
                         </CardBody>
                     </Card>
+                    </marquee>
                 </div>
             </div>
             <div className="row row-content">
@@ -124,7 +124,11 @@ function About(props) {
                     <h2>Corporate Leadership</h2>
                 </div>
                 <div className="col-12">
-           {leaders}
+                <Media list>
+                    <Stagger in>
+                        {leaders}
+                    </Stagger>
+                    </Media>
                 </div>
             </div>
         </div>

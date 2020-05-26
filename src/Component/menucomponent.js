@@ -4,15 +4,22 @@ import { Link } from "react-router-dom";
 import { Loading } from './LoadingComponent';
 import { baseUrl } from '../shared/baseUrl';
 
-
 function RenderMenuItem({ dish, onClick }) {
   return (
     <Card>
+      
       <Link to={`/menu/${dish.id}`}>
+      <div className="overflow">
+        <div className="card-img-top">
+          <div className=".card-img-top:hover">
+        
       <CardImg width="100%" src={baseUrl + dish.image} alt={dish.name} />
         <CardImgOverlay>
           <CardTitle>{dish.name}</CardTitle>
         </CardImgOverlay>
+      </div>
+      </div>
+      </div>
       </Link>
     </Card>
   );
@@ -22,6 +29,7 @@ const Menu = props => {
     return (
         <div key={dish.id} className="col-12 col-md-5 m-1">
         <RenderMenuItem dish={dish} onClick={props.onClick} />
+        
       </div>
     );
   });
@@ -58,8 +66,10 @@ else
             <hr />
           </div>
         </div>
+        
         <div className="row">{menu}</div>
       </div>
+    
     );
 }
 
