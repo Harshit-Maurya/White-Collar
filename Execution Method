@@ -1,0 +1,7 @@
+goto, documents>React>RWC>react>my-app
+cmd
+yarn start
+
+ALso to fetch from json server, documents>React>RWC>json-server
+cmd
+json-server --watch db.json -p 3001 -d 2000
